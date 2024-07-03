@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', (event) => {
     const heroBg = document.querySelector('.hero');
     const btn = document.getElementById('change-bg-btn');
-    const contentSections = document.querySelectorAll('.content .cutout p');
+    const contentSections = document.querySelectorAll('.content');
 
     btn.addEventListener('mouseover', () => {
         heroBg.style.backgroundImage = "url('img/bg-light.jpg')";
@@ -17,10 +17,10 @@ document.addEventListener('DOMContentLoaded', (event) => {
         contentSections.forEach(section => {
             const sectionPos = section.getBoundingClientRect().top + window.scrollY;
             if (scrollPos > sectionPos) {
-                section.classList.add('animate-content');
+                section.classList.add('animate-front');
                 section.classList.remove('fade-out');
             } else {
-                section.classList.remove('animate-content');
+                section.classList.remove('animate-front');
                 section.classList.add('fade-out');
             }
         });
