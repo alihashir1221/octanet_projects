@@ -43,23 +43,54 @@ nav .menu a::after{
     left: 0;
     width: 0%;
     height: 2px;
-    background-color: #0ed898;
+    background-color: #ff0000;
     transition: 0.4s;
 }
 nav .menu a:hover::after{
     width: 100%;
 }
-nav .social a i{
+nav .social{
+    display: flex;
+    align-items: center;
+    color: #fff;
+    margin-right: 30px;
+    position: relative;
+}
+nav .social .facebook a i{
+    margin-right: 30%;
+    position: center;
     color: #fff;
     font-size: 22px;
     margin-left: 10px;
     transition: 0.3s;
 }
-nav .social a i:hover{
+nav .social .facebook a i:hover{
     transform: scale(1.3);
-    color: #4acf0c;
+    color: #1361c8;
 }
-
+nav .social .twitter a i{
+    justify-content: none;
+    align-items: right;
+    color: #fff;
+    font-size: 22px;
+    margin-left: 10px;
+    transition: 0.3s;
+}
+nav .social .twitter a i:hover{
+    transform: scale(1.3);
+    color: #ff0000;
+}
+nav .social .instagram a i{
+    justify-content: space-between;
+    color: #fff;
+    font-size: 22px;
+    margin-left: 10px;
+    transition: 0.3s;
+}
+nav .social .instagram a i:hover{
+    transform: scale(1.3);
+    color: #e276d4;
+}
 .hero{
     width: 100%;
     height: 100vh;
@@ -171,10 +202,10 @@ nav .social a i:hover{
     animation: fadeOutDown 0.5s forwards;
 }
 
-.back{
+.front {
     width: 100%;
     height: 100vh;
-    background: url(img/bg-back.jpg);
+    background: url(img/bg-front.jpg);
     background-position: left;
     background-size: cover;
     display: flex;
@@ -182,28 +213,94 @@ nav .social a i:hover{
     align-items: center;  
 }
 
-.back .backtext{
-    width: 60%;
+.front .fronttext{
+    width: 50%;
     margin: auto;
     text-align: center;
 }
-.back .backtext h1{
-
+.front .fronttext h1{
     opacity: 0;
     transform: translateY(20px);
     animation: fadeInUp 1s forwards 0.4s;
 }
-.back .backtext h1 span{
+.front .fronttext h1 span{
     color: #e30d0d;
-    font-size: 80px;
+    font-size: 90px;
     font-weight: bold;
     transform: translateY(40px);
     animation: fadeInUp 1s forwards 0.6s;
 }
-.back .backtext p{
+.front .fronttext p{
     color: #fff;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     opacity: 0;
     transform: translateY(40px);
     animation: fadeInUp 2s forwards 0.6s;
+}
+.side{
+    width: 100%;
+    height: 100vh;
+    background: url(img/bg-side.jpg);
+    background-position: left;
+    background-size: cover;
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+}
+.side .sidetext{
+    width: 60%;
+    margin: auto;
+    text-align: center;
+}
+.side .sidetext h1{
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 2s forwards 0.4s;
+}
+.side .sidetext h1 span{
+    opacity: 0;
+    color: #e30d0d;
+    font-size: 70px;
+    font-weight: bold;
+    transform: translateY(30px);
+    animation: fadeInUp 1s forwards 0.6s;
+}
+.side .sidetext p{
+    color: #fff;
+    margin-bottom: 20px;
+    opacity: 0;
+    transform: translateY(40px);
+    animation: fadeInUp 2s forwards 0.6s;
+}
+.back{
+    width: 100%;
+    height: 100vh;
+    background: url(img/bg-last.jpg);
+    background-position: left;
+    background-size: cover;
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+}
+.back .backtext{
+    margin: auto;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: flex-end;   /* Align vertically at the bottom */
+    height: 40vh;           /* Full height of the viewport */
+    text-align: center; 
+    
+}
+.back .backtext h1{
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInUp 2s forwards 0.4s;
+}
+.back .backtext h1 span{
+    opacity: 0;
+    color: #e30d0d;
+    font-size: 70px;
+    font-weight: bold;
+    transform: translateY(30px);
+    animation: fadeInUp 1s forwards 0.6s;
 }
