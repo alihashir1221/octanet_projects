@@ -23,13 +23,12 @@ body {
     border-radius: 15px;
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border: 2px solid rgba(255, 0, 0, 0.2);
-    background: url(img/list.jpg);
+    border: 2px solid rgb(255, 255, 255);
+    background: url(img/galaxy.jpg);
     image-orientation: 100px;
 }
 
 #todo-list {
-    
     max-height: 200px;
     overflow-y: auto;
     list-style: none;
@@ -46,7 +45,7 @@ body {
     margin: 5px 0;
     background: #fff;
     border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 4px rgb(255, 255, 255);
 }
 
 #todo-list li.completed .status {
@@ -86,6 +85,8 @@ body {
 }
 
 .buttons input {
+    color: white;
+    background: url(img/list.jpg);
     padding: 10px;
     border: 2px solid #007bff;
     border-radius: 5px;
